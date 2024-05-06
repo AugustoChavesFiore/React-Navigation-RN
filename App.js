@@ -1,12 +1,12 @@
 import { StatusBar } from "expo-status-bar";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialBottomTabNavigator } from "react-native-paper/react-navigation";
-import { Provider } from "react-native-paper";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { Provider } from "react-native-paper";
 import { HomeScreen } from "./src/screens/HomeScreen";
 import { CounterScreen } from "./src/screens/CounterScreen";
 import { LoginScreen } from "./src/screens/LoginScreen";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function App() {
   const Tab = createMaterialBottomTabNavigator();
